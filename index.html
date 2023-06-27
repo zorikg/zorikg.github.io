@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Resume - Start Bootstrap Theme</title>
+        <title>Hadas Orgad</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -47,8 +47,9 @@
                         Hadas Orgad
                     </h1>
 					<p class="lead mb-5">I am a PhD candidate at the Technion-Israel Institute of Technology, advised by Yonatan Belinkov. </p>
-                    <p class="lead mb-5">As a PhD student in the field of Natural Language Processing, I have a strong interest in improving the robustness and interpretability of deep neural models. My goal is to contribute to the development of new methods for evaluating, understanding and improving the robustness of NLP models, and creating models that are both effective and fair. I am particularly focused on enhancing interpretability, as I believe that this will not only help to address biases but will also make models more transparent and trustworthy. </p>
-                    <p class="lead mb-5"><b>I want to hear from you!</b> Feel free to contact me for chatting, research brainstorming, or advice. </p>
+                    <p class="lead mb-5">As a PhD student in the field of Natural Language Processing, I have a strong interest in improving the robustness and interpretability of deep neural models. My goal is to contribute to the development of new methods for evaluating, understanding and improving the robustness of NLP models, and creating models that are both effective and fair.
+					I am particularly focused on using interpretability as a tool for improving our models, as I believe it will also make models more transparent and trustworthy. </p>
+                    <p class="lead mb-5"><b>I want to hear from you!</b> Feel free to contact me for brainstorming and potential collaborations. </p>
 					<h4>Past</h4>
 					<p class="lead mb-5">
 					I completed my bachelors and my masters in the Technion. During masters, I was selected for the 2022 EMEA Generation Google Scholarship.
@@ -58,6 +59,7 @@
                         <a class="social-icon" href="https://www.linkedin.com/in/hadas-orgad/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/orgadhadas"><i class="fab fa-github"></i></a>
                         <a class="social-icon" href="https://twitter.com/OrgadHadas"><i class="fab fa-twitter"></i></a>
+                        <a class="social-icon" href="https://scholar.google.com/citations?user=xWntyLkAAAA"><i class="ai ai-google-scholar"></i></a>
                     </div>
 					<p class="lead mb-5" style="margin-top: 1rem;"> <img src="./assets/email_icon.webp" alt="email icon" width="45" height="50"> orgadhadas at gmail dot com </p>
                 </div>
@@ -72,13 +74,40 @@
 					
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3>Debiasing NLP Models Without Demographic Information</h3>
+                            <h3>ReFACT: Updating Text-to-Image Models by Editing the Text Encoder</h3>
 							<h4> Hadas Orgad, Yonatan Belinkov </h4>
                             <div class="subheading">Preprint</div>
                             <p>
+							Text-to-image models are trained on extensive amounts of data, leading them to implicitly encode factual knowledge within their parameters. While some facts are useful, others may be incorrect or become outdated (e.g., the current President of the United States). We introduce ReFACT, a method for updating text-to-image models. ReFACT updates the weights of a specific layer in the text encoder, only modifying a tiny portion of the model's parameters, and leaving the rest of the model unaffected.							</p>
+							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2212.10563" target="_blank" rel="noopener">Arxiv</a>
+							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="./publications/Debiasing-NLP-Models-Without-Demographic-Information/cite.bib" target="_blank" rel="noopener">Cite</a>
+						</div>
+						<div class="flex-shrink-0"><span class="text-primary">2023</span></div>
+					</div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3>Editing Implicit Assumptions in Text-to-Image Diffusion Models</h3>
+							<h4> Hadas Orgad*, Bahjat Kawar*, Yonatan Belinkov </h4>
+                            <div class="subheading">Preprint</div>
+                            <p>
+							Text-to-image diffusion models often make implicit assumptions about the world when generating images. While some assumptions are useful (e.g., the sky is blue), they can also be outdated, incorrect, or reflective of social biases present in the training data.
+							In this work, we aim to edit a given implicit assumption in a pre-trained diffusion model.
+							Our method is highly efficient, as it modifies a mere 2.2% of the model's parameters in under one second.
+							</p>
+							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2303.08084" target="_blank" rel="noopener">Arxiv</a>
+							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="./publications/TIME/cite.bib" target="_blank" rel="noopener">Cite</a>
+						</div>
+						<div class="flex-shrink-0"><span class="text-primary">2023</span></div>
+					</div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3>Debiasing NLP Models Without Demographic Information</h3>
+							<h4> Hadas Orgad, Yonatan Belinkov </h4>
+                            <div class="subheading">ACL 2023</div>
+                            <p>
 							In this work, we propose a debiasing method that operates without any prior knowledge of the demographics in the dataset, detecting biased examples based on an auxiliary model that predicts the main model's success and down-weights them during the training process. Results on racial and gender bias demonstrate that it is possible to mitigate social biases without having to use a costly demographic annotation process.
 							</p>
-							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2212.10563" target="_blank" rel="noopener">PDF</a>
+							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2212.10563" target="_blank" rel="noopener">Arxiv</a>
 							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="./publications/Debiasing-NLP-Models-Without-Demographic-Information/cite.bib" target="_blank" rel="noopener">Cite</a>
 						</div>
 						<div class="flex-shrink-0"><span class="text-primary">2022</span></div>
@@ -89,7 +118,7 @@
 							<h4> Hadas Orgad, Yonatan Belinkov </h4>
                             <div class="subheading mb-3">GeBNLP 2022</div>
                             <p>Considerable efforts to measure and mitigate gender bias in recent years have led to the introduction of an abundance of tasks, datasets, and metrics used in this vein. In this position paper, we assess the current paradigm of gender bias evaluation and identify several flaws in it.</p>
-                        	<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://aclanthology.org/2022.gebnlp-1.17/" target="_blank" rel="noopener">PDF</a>
+                        	<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://aclanthology.org/2022.gebnlp-1.17/" target="_blank" rel="noopener">Arxiv</a>
 							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="./publications/Choose-Your-Lenses/cite.bib" target="_blank" rel="noopener">Cite</a>
 						</div>
                         <div class="flex-shrink-0"><span class="text-primary">2022</span></div>
@@ -100,7 +129,7 @@
 							<h4>Hadas Orgad, Seraphina Goldfarb-Tarrant, Yonatan Belinkov</h4>
                             <div class="subheading mb-3">NAACL 2022</div>
                             <p>Common studies of gender bias in NLP focus either on extrinsic bias measured by model performance on a downstream task or on intrinsic bias found in models’ internal representations. However, the relationship between extrinsic and intrinsic bias is relatively unknown. In this work, we illuminate this relationship by measuring both quantities together.</p>
-                        	<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://aclanthology.org/2022.naacl-main.188/" target="_blank" rel="noopener">PDF</a>
+                        	<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://aclanthology.org/2022.naacl-main.188/" target="_blank" rel="noopener">Arxiv</a>
 							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="./publications/How-Gender-Debiasing-Affects-Internal-Model-Representations/cite.bib" target="_blank" rel="noopener">Cite</a>
 						</div>
                         <div class="flex-shrink-0"><span class="text-primary">2022</span></div>
