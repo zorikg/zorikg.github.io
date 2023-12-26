@@ -46,11 +46,20 @@
                     <h1 class="mb-0">
                         Hadas Orgad
                     </h1>
-					<p class="lead mb-5">I am a PhD candidate at the Technion-Israel Institute of Technology, advised by Yonatan Belinkov. </p>
-                    <p class="lead mb-5">As a PhD student in the field of Natural Language Processing, I have a strong interest in improving the robustness and interpretability of deep neural models. My goal is to contribute to the development of new methods for evaluating, understanding and improving the robustness of NLP models, and creating models that are both effective and fair.
-					I am particularly focused on using interpretability as a tool for improving our models, as I believe it will also make models more transparent and trustworthy. </p>
-                    <p class="lead mb-5"><b>I want to hear from you!</b> Feel free to contact me for brainstorming and potential collaborations. </p>
+				
+					<p class="lead mb-5"> I am currently pursuing my Ph.D. in the field of Natural Language Processing at the <a href="https://cs.technion.ac.il/">Technion-Israel Institute of Technology</a> under the supervision of <a href="https://belinkov.com/">Yonatan Belinkov</a>.</p>
+                    <p class="lead mb-5">
+					My research focus is on interpretability of large language models, exploring how they encode linguistic and factual information about the world. My primary focus lies in leveraging interpretability as a strategic tool for enhancing model performance, specifically addressing robustness and safety concerns, with the ultimate goal of improving transparency and trustworthiness. Thus, my work revolves around developing new methods for evaluating, understanding and improving the robustness of NLP models, ultimately aiming to create models that are both powerful and responsible.
+					</p>
+					<p class="lead mb-5">
+					I've been selected as a <a href="https://machinelearning.apple.com/updates/apple-scholars-aiml-2023">2023 Apple Scholar</a> in AI/ML.
+					</p>
+                    <p class="lead mb-5"><b>Feel free to reach out</b> 
+					if you're interested in brainstorming or exploring potential collaboration opportunities with me. </p>
 					<h4>Past</h4>
+					<p class="lead mb-5">
+					I recently interned at Apple. Before that, I worked at Microsoft for 3.5 years (software engineering and later research).
+					</p>
 					<p class="lead mb-5">
 					I completed my bachelors and my masters in the Technion. During masters, I was selected for the 2022 EMEA Generation Google Scholarship.
 					Previously, I worked in Microsoft, for the cloud security research, where I worked on data-science problems and on the application of NLP for security products.
@@ -72,13 +81,29 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Publications</h2>
 					
+					<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3>Unified Concept Editing in Diffusion Models</h3>
+							<h4> Rohit Gandikota, Hadas Orad, Yonatan Belinkov, Joanna Materzyńska, David Bau </h4>
+                            <div class="subheading">IEEE/CVF WACV 2023</div>
+                            <p>
+							Text-to-image models suffer from various safety issues that may limit their suitability for deployment. Previous methods have separately addressed individual issues of bias, copyright, and offensive content in text-to-image models. However, in the real world, all of these issues appear simultaneously in the same model.
+							In this paper, we present a method that tackles those diverse issues with a single approach.</p>
+							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://unified.baulab.info/" target="_blank" rel="noopener">Project Page</a>
+							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2212.10563" target="_blank" rel="noopener">Arxiv</a>
+							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="./publications/Debiasing-NLP-Models-Without-Demographic-Information/cite.bib" target="_blank" rel="noopener">Cite</a>
+						</div>
+						<div class="flex-shrink-0"><span class="text-primary">2023</span></div>
+					</div>
+					
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3>ReFACT: Updating Text-to-Image Models by Editing the Text Encoder</h3>
 							<h4> Hadas Orgad, Yonatan Belinkov </h4>
                             <div class="subheading">Preprint</div>
                             <p>
-							Text-to-image models are trained on extensive amounts of data, leading them to implicitly encode factual knowledge within their parameters. While some facts are useful, others may be incorrect or become outdated (e.g., the current President of the United States). We introduce ReFACT, a method for updating text-to-image models. ReFACT updates the weights of a specific layer in the text encoder, only modifying a tiny portion of the model's parameters, and leaving the rest of the model unaffected.							</p>
+							Text-to-image models are trained on extensive amounts of data, leading them to implicitly encode factual knowledge within their parameters. While some facts are useful, others may be incorrect or become outdated (e.g., the current President of the United States). We introduce ReFACT, a method for updating text-to-image models. ReFACT updates the weights of a specific layer in the text encoder, only modifying a tiny portion of the model's parameters, and leaving the rest of the model unaffected.</p>
+							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://unified.baulab.info/" target="_blank" rel="noopener">Project Page</a>
 							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2212.10563" target="_blank" rel="noopener">Arxiv</a>
 							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="./publications/Debiasing-NLP-Models-Without-Demographic-Information/cite.bib" target="_blank" rel="noopener">Cite</a>
 						</div>
@@ -88,12 +113,13 @@
                         <div class="flex-grow-1">
                             <h3>Editing Implicit Assumptions in Text-to-Image Diffusion Models</h3>
 							<h4> Hadas Orgad*, Bahjat Kawar*, Yonatan Belinkov </h4>
-                            <div class="subheading">Preprint</div>
+                            <div class="subheading">ICCV 2023</div>
                             <p>
 							Text-to-image diffusion models often make implicit assumptions about the world when generating images. While some assumptions are useful (e.g., the sky is blue), they can also be outdated, incorrect, or reflective of social biases present in the training data.
 							In this work, we aim to edit a given implicit assumption in a pre-trained diffusion model.
 							Our method is highly efficient, as it modifies a mere 2.2% of the model's parameters in under one second.
 							</p>
+							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://time-diffusion.github.io/" target="_blank" rel="noopener">Project Page</a>
 							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2303.08084" target="_blank" rel="noopener">Arxiv</a>
 							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="./publications/TIME/cite.bib" target="_blank" rel="noopener">Cite</a>
 						</div>
