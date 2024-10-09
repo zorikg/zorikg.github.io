@@ -76,7 +76,7 @@
 			
 			<section class="resume-section" id="publications">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Publications</h2>
+                    <h2 class="mb-5">Selected Publications</h2>
 
 
 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -94,90 +94,25 @@
     </div>
     <div class="flex-shrink-0"><span class="text-primary">2024</span></div>
 </div>
+
+
+
+<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+    <div class="flex-grow-1">
+        <h3>TrueTeacher: Learning Factual Consistency Evaluation with Large Language Models</h3>
+        <h4>
+                <u>Zorik Gekhman</u>, <span style="font-weight: normal;">Gal Yona, Roee Aharoni, Matan Eyal, Amir Feder, Roi Reichart, Jonathan Herzig</span>
+        </h4>
+        <div class="subheading">EMNLP 2023</div>
+        <p>
+            We study the impact of introducing new factual knowledge through fine-tuning, on the LLM's capability to utilize its pre-existing knowledge, acquired during pre-training. We show that LLMs struggle to learn new knowledge through fine-tuning, but when they eventually learn this new knowledge, it leads to a higher tendency to hallucinations.
+        </p>
+        <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://aclanthology.org/2023.emnlp-main.127.pdf" target="_blank" rel="noopener">Paper</a>
+        <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="./publications/trueteacher/cite.bib" target="_blank" rel="noopener">Cite</a>
+    </div>
+    <div class="flex-shrink-0"><span class="text-primary">2024</span></div>
+</div>
 			
-	
-								
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3>TrueTeacher: Learning Factual Consistency Evaluation with Large Language Models</h3>
-							<h4> Dana Arad*, Hadas Orgad*, Yonatan Belinkov </h4>
-                            <div class="subheading">EMNLP 2023</div>
-                            <p>We introduce TrueTeacher, a method for generating synthetic data by annotating diverse model-generated summaries using a LLM, which does not rely on human-written summaries, and is multilingual by nature.</p>
-							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://aclanthology.org/2023.emnlp-main.127.pdf" target="_blank" rel="noopener">Paper</a>
-							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="./publications/ReFACT/cite.bib" target="_blank" rel="noopener">Cite</a>
-						</div>
-						<div class="flex-shrink-0"><span class="text-primary">2023</span></div>
-					</div>
-
-
-
-			
-					<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3>Unified Concept Editing in Diffusion Models</h3>
-							<h4> Rohit Gandikota, Hadas Orgad, Yonatan Belinkov, Joanna Materzyńska, David Bau </h4>
-                            <div class="subheading">IEEE/CVF WACV 2024</div>
-                            <p>
-							Text-to-image models suffer from various safety issues that may limit their suitability for deployment. Previous methods have separately addressed individual issues of bias, copyright, and offensive content in text-to-image models. However, in the real world, all of these issues appear simultaneously in the same model.
-							In this paper, we present a method that tackles those diverse issues with a single approach.</p>
-							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://unified.baulab.info/" target="_blank" rel="noopener">Project Page</a>
-							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2308.14761" target="_blank" rel="noopener">Arxiv</a>
-							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="./publications/UCE/cite.bib" target="_blank" rel="noopener">Cite</a>
-						</div>
-						<div class="flex-shrink-0"><span class="text-primary">2023</span></div>
-					</div>
-					
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3>Editing Implicit Assumptions in Text-to-Image Diffusion Models</h3>
-							<h4> Hadas Orgad*, Bahjat Kawar*, Yonatan Belinkov </h4>
-                            <div class="subheading">ICCV 2023</div>
-                            <p>
-							Text-to-image diffusion models often make implicit assumptions about the world when generating images. While some assumptions are useful (e.g., the sky is blue), they can also be outdated, incorrect, or reflective of social biases present in the training data.
-							In this work, we aim to edit a given implicit assumption in a pre-trained diffusion model.
-							Our method is highly efficient, as it modifies a mere 2.2% of the model's parameters in under one second.
-							</p>
-							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://time-diffusion.github.io/" target="_blank" rel="noopener">Project Page</a>
-							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2303.08084" target="_blank" rel="noopener">Arxiv</a>
-							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="./publications/TIME/cite.bib" target="_blank" rel="noopener">Cite</a>
-						</div>
-						<div class="flex-shrink-0"><span class="text-primary">2023</span></div>
-					</div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3>Debiasing NLP Models Without Demographic Information</h3>
-							<h4> Hadas Orgad, Yonatan Belinkov </h4>
-                            <div class="subheading">ACL 2023</div>
-                            <p>
-							In this work, we propose a debiasing method that operates without any prior knowledge of the demographics in the dataset, detecting biased examples based on an auxiliary model that predicts the main model's success and down-weights them during the training process. Results on racial and gender bias demonstrate that it is possible to mitigate social biases without having to use a costly demographic annotation process.
-							</p>
-							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2212.10563" target="_blank" rel="noopener">Arxiv</a>
-							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="./publications/Debiasing-NLP-Models-Without-Demographic-Information/cite.bib" target="_blank" rel="noopener">Cite</a>
-						</div>
-						<div class="flex-shrink-0"><span class="text-primary">2022</span></div>
-					</div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Choose your lenses: Flaws in gender bias evaluation</h3>
-							<h4> Hadas Orgad, Yonatan Belinkov </h4>
-                            <div class="subheading mb-3">GeBNLP 2022</div>
-                            <p>Considerable efforts to measure and mitigate gender bias in recent years have led to the introduction of an abundance of tasks, datasets, and metrics used in this vein. In this position paper, we assess the current paradigm of gender bias evaluation and identify several flaws in it.</p>
-                        	<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://aclanthology.org/2022.gebnlp-1.17/" target="_blank" rel="noopener">Arxiv</a>
-							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="./publications/Choose-Your-Lenses/cite.bib" target="_blank" rel="noopener">Cite</a>
-						</div>
-                        <div class="flex-shrink-0"><span class="text-primary">2022</span></div>
-                    </div>
-					<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">How Gender Debiasing Affects Internal Model Representations, and Why It Matters</h3>
-							<h4>Hadas Orgad, Seraphina Goldfarb-Tarrant, Yonatan Belinkov</h4>
-                            <div class="subheading mb-3">NAACL 2022</div>
-                            <p>Common studies of gender bias in NLP focus either on extrinsic bias measured by model performance on a downstream task or on intrinsic bias found in models’ internal representations. However, the relationship between extrinsic and intrinsic bias is relatively unknown. In this work, we illuminate this relationship by measuring both quantities together.</p>
-                        	<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://aclanthology.org/2022.naacl-main.188/" target="_blank" rel="noopener">Arxiv</a>
-							<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="./publications/How-Gender-Debiasing-Affects-Internal-Model-Representations/cite.bib" target="_blank" rel="noopener">Cite</a>
-						</div>
-                        <div class="flex-shrink-0"><span class="text-primary">2022</span></div>
-                    </div>
                 </div>
             </section>
             <hr class="m-0" />
